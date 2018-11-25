@@ -13,7 +13,6 @@ def printHashSym():
 
 
 def check_what_char(char):
-    {
     if char == 'A' or char == 'a':
         GPIO.output(0, GPIO.HIGH)
         GPIO.cleanup()
@@ -189,7 +188,7 @@ def check_what_char(char):
         GPIO.cleanup()
         print("# detected.")
 
-        elif char == '1:
+        elif char == '1':
         printHashSym()
         GPIO.output(0, GPIO.HIGH)
         GPIO.cleanup()
@@ -263,7 +262,8 @@ def check_what_char(char):
         GPIO.output(3, GPIO.HIGH)
         GPIO.cleanup()
         print("0 detected.")
-    }
+        
+        
 #functions ends here
 
 
