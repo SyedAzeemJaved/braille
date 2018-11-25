@@ -1,11 +1,11 @@
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
-GPIO.setmode(17,GPIO.out)
-GPIO.setmode(27,GPIO.out)
-GPIO.setmode(22,GPIO.out)
-GPIO.setmode(5,GPIO.out)
-GPIO.setmode(6,GPIO.out)
-GPIO.setmode(13,GPIO.out)
+GPIO.setmode(17,GPIO.OUT)
+GPIO.setmode(27,GPIO.OUT)
+GPIO.setmode(22,GPIO.OUT)
+GPIO.setmode(5,GPIO.OUT)
+GPIO.setmode(6,GPIO.OUT)
+GPIO.setmode(13,GPIO.OUT)
 
 #defined functions start here
 
