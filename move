@@ -1,19 +1,13 @@
 from time import sleep
 import RPi.GPIO as GPIO
 
-DIR1 = 20   # Direction GPIO Pin
-STEP1 = 17  # Step GPIO Pin
-
-DIR2 = 21   # Direction GPIO Pin
-STEP2 = 18  # Step GPIO Pin
-
+DIR = 20   # Direction GPIO Pin
+STEP = 17  # Step GPIO Pin
 
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(DIR1, GPIO.OUT)
-GPIO.setup(STEP1, GPIO.OUT)
-GPIO.setup(DIR2, GPIO.OUT)
-GPIO.setup(STEP2, GPIO.OUT)
+GPIO.setup(DIR, GPIO.OUT)
+GPIO.setup(STEP, GPIO.OUT)
 
 delay = .0208
 
