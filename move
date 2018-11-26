@@ -14,7 +14,7 @@ delay = .0208
 steps = 120 # steps b/w characters 
 
 
-for x in steps:
+for x in range(0, steps):
 	GPIO.output(DIR, HIGH)
 	GPIO.output(STEP, GPIO.HIGH)
 	sleep(delay)
