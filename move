@@ -1,8 +1,8 @@
 from time import sleep
 import RPi.GPIO as GPIO
 
-DIR = 20   # Direction GPIO Pin
-STEP = 17  # Step GPIO Pin
+DIR = 23   # Direction GPIO Pin
+STEP = 24  # Step GPIO Pin
 
 
 GPIO.setmode(GPIO.BCM)
