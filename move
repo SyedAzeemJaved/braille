@@ -15,7 +15,7 @@ steps = 120 # steps b/w characters
 
 
 for x in range(0, steps):
-	GPIO.output(DIR, HIGH)
+	GPIO.output(DIR, GPIO.HIGH)
 	GPIO.output(STEP, GPIO.HIGH)
 	sleep(delay)
 	GPIO.output(STEP, GPIO.LOW)
