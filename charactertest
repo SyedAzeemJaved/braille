@@ -209,27 +209,27 @@ def check_what_char(char):
         setallLOW()
         print("# detected.")
 
-    elif char == 1:
+    elif char == '1':
         printHashSym()
         GPIO.output(27, GPIO.HIGH)
         setallLOW()
         print("1 detected.")
 
-    elif char == 2:
+    elif char == '2':
         printHashSym()
         GPIO.output(17, GPIO.HIGH)
         GPIO.output(22, GPIO.HIGH)
         setallLOW()
         print("2 detected.")
 
-    elif char == 3:
+    elif char == '3':
         printHashSym()
         GPIO.output(17, GPIO.HIGH)
         GPIO.output(27, GPIO.HIGH)
         setallLOW()
         print("3 detected.")
 
-    elif char == 4:
+    elif char == '4':
         printHashSym()
         GPIO.output(17, GPIO.HIGH)
         GPIO.output(27, GPIO.HIGH)
@@ -237,14 +237,14 @@ def check_what_char(char):
         setallLOW()
         print("4 detected.")
 
-    elif char == 5:
+    elif char == '5':
         printHashSym()
         GPIO.output(17, GPIO.HIGH)
         GPIO.output(5, GPIO.HIGH)
         setallLOW()
         print("5 detected.")
 
-    elif char == 6:
+    elif char == '6':
         printHashSym()
         GPIO.output(17, GPIO.HIGH)
         GPIO.output(27, GPIO.HIGH)
@@ -252,7 +252,7 @@ def check_what_char(char):
         setallLOW()
         print("6 detected.")
 
-    elif char == 7:
+    elif char == '7':
         printHashSym()
         GPIO.output(17, GPIO.HIGH)
         GPIO.output(27, GPIO.HIGH)
@@ -261,7 +261,7 @@ def check_what_char(char):
         setallLOW()
         print("7 detected.")
 
-    elif char == 8:
+    elif char == '8':
         printHashSym()
         GPIO.output(17, GPIO.HIGH)
         GPIO.output(22, GPIO.HIGH)
@@ -269,14 +269,14 @@ def check_what_char(char):
         setallLOW()
         print("8 detected.")
 
-    elif char == 9:
+    elif char == '9':
         printHashSym()
         GPIO.output(27, GPIO.HIGH)
         GPIO.output(22, GPIO.HIGH)
         setallLOW()
         print("9 detected.")
 
-    elif char == 0:
+    elif char == '0':
         printHashSym()
         GPIO.output(27, GPIO.HIGH)
         GPIO.output(22, GPIO.HIGH)
