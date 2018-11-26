@@ -275,7 +275,7 @@ def check_what_char(char):
 
 
 #start of code
-textString = input("Enter a string: ")
+textString = raw_input("Enter a string: ")
 
 for char in textString:
     textData = char
