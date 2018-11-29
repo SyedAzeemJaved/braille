@@ -1,0 +1,294 @@
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(16,GPIO.OUT)
+GPIO.setup(26,GPIO.OUT)
+GPIO.setup(19,GPIO.OUT)
+GPIO.setup(13,GPIO.OUT)
+GPIO.setup(6,GPIO.OUT)
+GPIO.setup(5,GPIO.OUT)
+
+#defined functions start here
+
+
+def setallLOW():
+    GPIO.output(16,GPIO.LOW)
+    GPIO.output(26,GPIO.LOW)
+    GPIO.output(19,GPIO.LOW)
+    GPIO.output(13,GPIO.LOW)
+    GPIO.output(6,GPIO.LOW)
+    GPIO.output(5,GPIO.LOW)
+
+
+
+def printHashSym():
+    {
+    #GPIO.output(26, GPIO.HIGH)
+    #GPIO.output(13, GPIO.HIGH)
+    #GPIO.output(6, GPIO.HIGH)
+    #GPIO.output(5, GPIO.HIGH)
+    #setallLOW()
+    }
+
+
+
+def check_what_char(char):
+    if char == 'A' or char == 'a':
+        GPIO.output(16, GPIO.HIGH)
+        setallLOW()
+        print("A detected.")
+    elif char == 'B' or char == 'b':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        setallLOW()
+        print("B detected.")
+    elif char == 'C' or char == 'c':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        setallLOW()
+        print("C detected.")
+    elif char == 'D' or char == 'd':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("D detected.")
+    elif char == 'E' or char == 'e':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("E detected.")
+    elif char == 'F' or char == 'f':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        setallLOW()
+        print("F detected.")
+    elif char == 'G' or char == 'g':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("G detected.")
+    elif char == 'H' or char == 'h':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("H detected.")
+    elif char == 'I' or char == 'i':
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        setallLOW()
+        print("I detected.")
+    elif char == 'J' or char == 'j':
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("J detected.")
+    elif char == 'K' or char == 'k':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("K detected.")
+    elif char == 'L' or char == 'l':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("L detected.")
+    elif char == 'M' or char == 'm':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("M detected.")
+    elif char == 'N' or char == 'n':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("N detected.")
+    elif char == 'O' or char == 'o':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("O detected.")
+    elif char == 'P' or char == 'p':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("P detected.")
+    elif char == 'Q' or char == 'q':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("Q detected.")
+    elif char == 'R' or char == 'r':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("R detected.")
+    elif char == 'S' or char == 's':
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("S detected.")
+    elif char == 'T' or char == 't':
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        setallLOW()
+        print("T detected.")
+    elif char == 'U' or char == 'u':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        GPIO.output(5, GPIO.HIGH)
+        setallLOW()
+        print("U detected.")
+    elif char == 'V' or char == 'v':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        GPIO.output(5, GPIO.HIGH)
+        setallLOW()
+        print("V detected.")
+    elif char == 'W' or char == 'w':
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(5, GPIO.HIGH)
+        setallLOW()
+        print("W detected.")
+    elif char == 'X' or char == 'x':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        GPIO.output(5, GPIO.HIGH)
+        setallLOW()
+        print("X detected.")
+    elif char == 'Y' or char == 'y':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        GPIO.output(5, GPIO.HIGH)
+        setallLOW()
+        print("Y detected.")
+    elif char == 'Z' or char == 'z':
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        GPIO.output(5, GPIO.HIGH)
+        setallLOW()
+        print("Z detected.")
+
+    elif char == ' ':
+        print(" ")
+
+        #for numbers
+    elif char == '#':
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(6, GPIO.HIGH)
+        GPIO.output(5, GPIO.HIGH)
+        setallLOW()
+        print("# detected.")
+
+    elif char == 1:
+        printHashSym()
+        GPIO.output(26, GPIO.HIGH)
+        setallLOW()
+        print("1 detected.")
+
+    elif char == 2:
+        printHashSym()
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        setallLOW()
+        print("2 detected.")
+
+    elif char == 3:
+        printHashSym()
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        setallLOW()
+        print("3 detected.")
+
+    elif char == 4:
+        printHashSym()
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("4 detected.")
+
+    elif char == 5:
+        printHashSym()
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("5 detected.")
+
+    elif char == 6:
+        printHashSym()
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        setallLOW()
+        print("6 detected.")
+
+    elif char == 7:
+        printHashSym()
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("7 detected.")
+
+    elif char == 8:
+        printHashSym()
+        GPIO.output(16, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("8 detected.")
+
+    elif char == 9:
+        printHashSym()
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        setallLOW()
+        print("9 detected.")
+
+    elif char == 0:
+        printHashSym()
+        GPIO.output(26, GPIO.HIGH)
+        GPIO.output(19, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        setallLOW()
+        print("0 detected.")
+#functions ends here
+
+
+#start of code
+textString = raw_input("Enter a string: ")
+
+for char in textString:
+    textData = char
+    check_what_char(textData)
+
+
