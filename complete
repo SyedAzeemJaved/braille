@@ -25,7 +25,8 @@ def resetPos():
     #magic
 
 
-#def marginSteps():
+def marginSteps():
+    #nothing
 
 def moveForward():
     GPIO.output(DIR, CW)  # for Forward Direction, always high
@@ -50,6 +51,6 @@ def moveBackward():
 moveBackward()
 moveBackward()
 moveBackward()
-moveBackward()
-moveBackward()
-moveBackward()
+moveForward()
+moveForkward()
+moveForward()
