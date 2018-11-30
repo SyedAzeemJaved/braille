@@ -12,6 +12,51 @@ GPIO.setup(5,GPIO.OUT)
 #defined functions start here
 
 
+DIR = 23   # Direction GPIO Pin
+STEP = 24  # Step GPIO Pin
+CW = 1 #forward, always high
+CCW = 0 #backward, always low
+SPR = 550
+step_count = SPR
+delay = .0005
+
+
+#setup
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(DIR, GPIO.OUT)
+GPIO.setup(STEP, GPIO.OUT)
+#ends here
+
+#80steps = 1mm
+#560steps = 7mm
+
+#def resetPos():
+    #magic
+
+#def marginSteps():
+
+def moveForward():
+    GPIO.output(DIR, CW)  # for Forward Direction, always high
+    for x in range(step_count):
+        GPIO.output(STEP, GPIO.HIGH)
+        sleep(delay)
+        GPIO.output(STEP, GPIO.LOW)
+        sleep(delay)
+    GPIO.cleanup()
+
+
+def moveBackward():
+    GPIO.output(DIR, CCW)  # for Backward Direction, always low
+    for x in range(step_count):
+        GPIO.output(STEP, GPIO.HIGH)
+        sleep(delay)
+        GPIO.output(STEP, GPIO.LOW)
+        sleep(delay)
+    GPIO.cleanup()
+
+
+
+
 def setallLOW():
     GPIO.output(16,GPIO.LOW)
     GPIO.output(26,GPIO.LOW)
@@ -372,9 +417,9 @@ def check_what_char(char):
 textString = raw_input("Enter a string: ")
 
 for char in textString:
-    setallLOW()
     textData = char
     check_what_char(textData)
-    GPIO.cleanup()
+    moveForward()
+
 
 
