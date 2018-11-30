@@ -372,6 +372,7 @@ def check_what_char(char):
 textString = raw_input("Enter a string: ")
 
 for char in textString:
+    setallLOW()
     textData = char
     check_what_char(textData)
     GPIO.cleanup()
